@@ -1,9 +1,4 @@
 /* Formatação Geral */
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     font-family: Arial, "Helvetica", sans-serif;
 }
@@ -141,6 +136,56 @@ header p{
     font-size: 2em;
 }
 
+
+/* Formatação Especialidades */
+#competencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+
+#competencias h2{
+ margin-bottom: 20px;
+ margin-top: 10px;
+ font-size: 2em;
+ text-align: center;
+}
+
+#competencias h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#competencias p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#competencias .comp p{
+    border-left: 5px groove #ADD8E6;
+    border-right: 5px groove #ADD8E6;
+    border-bottom: 5px groove #ADD8E6;
+    border-radius: 15%;
+    margin-top: 0px;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+#competencias a{
+ text-decoration: none;
+}
+
+#competencias img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px){
 
 /* Formatação Nav */
@@ -200,6 +245,28 @@ header{
     flex-grow: 1;
     flex-basis: 150px;
     padding: 0 10px;
+}
+
+
+/* Formatação Competências */
+#competencias{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#competencias h2{
+    width: 100%;
+    text-align: center;
+}
+
+#competencias h3{
+    width: 100%;
+    text-align: center;
+}
+
+#competencias .comp{
+    width: 33.3333333333333333333333333333%;
+    text-align: center;
 }
 
 }
