@@ -1,6 +1,7 @@
 /* Formatação Geral */
 body{
     font-family: Arial, "Helvetica", sans-serif;
+    display: block;
 }
 
 h1, h2, h3{
@@ -9,6 +10,7 @@ h1, h2, h3{
 
 .container{
     width: 100%;
+    overflow-x: hidden; 
 }
 
 
@@ -186,87 +188,182 @@ header p{
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px){
 
-/* Formatação Nav */
-nav{
-    flex-direction: row;
-    justify-content: space-around;
+/* Formatação Meus Trabalhos */
+.trab img:hover{
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
-
-nav ul{
-    flex-direction: row;
-    width: 50%;
-}
-
-
-/* Formatação Header */
-header{
-    height: 60vh;
-    justify-content: center;
+.trab img{
+    border: 10px groove #ADD8E6;
 }
 
 
-/* Formatação Sobre */
-#sobre{
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Formatação Hobby */
+#hobby{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 90vh;
-    min-height: 80vh;
-    justify-content: center;
-}
-#sobre h2{
-    text-align: center;
+    padding-top: 20px;
+    margin: 0 20px;
     width: 100%;
 }
-#sobre div{
-    flex-grow: 1;
-    flex-basis: 300px;
-    padding: 0 10px;
+
+#hobby h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.hobby{
+    width: 80%;
+    text-align: center;
+    align-content: center;
+}
+
+.hobby p{
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.hobby iframe{
+    height: 150px;
+    margin-bottom: 20px;
 }
 
 
-/* Formatação Especialidades */
-#especialidades{
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-#especialidades h2{
+/* Formatação Contato */
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    background-color: #ADD8E6;;
     width: 100%;
+}
+
+#contato h2{
+    margin: 20px;
+    font-size: 2em;
     text-align: center;
 }
 
-#especialidades div{
-    flex-grow: 1;
-    flex-basis: 150px;
-    padding: 0 10px;
+#contato > p{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#contato a{
+    text-decoration: none;
+    text-align: center;
 }
 
 
-/* Formatação Competências */
-#competencias{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#competencias h2{
+/* Formatação Footer */
+footer{
+    text-align: center;
     width: 100%;
-    text-align: center;
+    padding: 20px 0;
 }
 
-#competencias h3{
-    width: 100%;
-    text-align: center;
-}
+@media screen and (min-width: 768px){
+    /* Formatação Geral */  
+    nav, nav ul, #sobre, #especialidades, #competencias, #hobby, #contato{
+        flex-direction: row;
+    }
+    #sobre h2, #especialidades h2, #competencias h2, #competencias h3, #competencias .comp, #competencias .trab, #hobby h2, #contato, #contato div, #contato h2, #contato p{
+        text-align: center;
+        
+    }
+    #sobre, #especialidades, #competencias, #hobby, #contato{
+        flex-wrap: wrap;
+    }
 
-#competencias .comp{
-    width: 33.3333333333333333333333333333%;
-    text-align: center;
-}
+    /* Formatação Nav */
+    nav{
+        justify-content: space-around;
+    }
+    nav ul{
+        width: 50%;
+    }
 
+    /* Formatação Header */
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+
+    /* Formatação Sobre */
+    #sobre{
+        align-items: center;
+        height: 90vh;
+        min-height: 80vh;
+        justify-content: center;
+    }
+    #sobre h2{
+        width: 100%;
+    }
+    #sobre div{
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 0 10px;
+    }
+
+    /* Formatação Especialidades */
+    #especialidades{
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #especialidades h2{
+        width: 100%;
+    }
+    #especialidades div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /* Formatação Competências */
+    #competencias h2, h3{
+        width: 100%;
+    }
+    #competencias .comp, .trab{
+        width: 33.3333333333333333333333333333%;
+    }
+
+    /* Formatação Hobby */
+    #hobby h2{
+        width: 100%;
+    }
+    #hobby p{
+        margin-right: 20px;
+    }
+    #hobby .hobby{
+        width: 50%;
+    }
+    .hobby iframe{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* Formatação Contato */
+    #contato{
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 40vh;
+        width: 100%;
+    }
+    #contato div{
+        width: 33.3333333333333333333333333333%;
+        padding-bottom: 20px;
+    }
+    #contato h2, #contato p{
+        width: 100%;
+    }
 }
