@@ -1,7 +1,7 @@
 /* Formatação Geral */
-body{
+html, body{
     font-family: Arial, "Helvetica", sans-serif;
-    display: block;
+    overflow-x: hidden !important; 
 }
 
 h1, h2, h3{
@@ -10,7 +10,7 @@ h1, h2, h3{
 
 .container{
     width: 100%;
-    overflow-x: hidden; 
+    background-color: #f4f4f4;
 }
 
 
@@ -19,8 +19,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ADD8E6;
-    padding: 30px;
+    background-color: #14425d;
 }
 
 nav ul{
@@ -40,12 +39,36 @@ nav ul li{
 
 nav ul li a{
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px 5px;
     width: 100%;
     text-decoration: none;
+    text-transform: uppercase;
     color: #FFFFFF; 
+    border-radius: 4px;
 }
 
+nav ul li a:hover{
+    background: rgb(112, 172, 180);
+    transition: 1s ease;
+}
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.8em;
+    height: 25px;
+    line-height: 1.2em;
+    background: rgb(234, 239, 242);
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.dev p {
+    margin-left: 20px;
+    margin-top: 7px;
+    
+    color: #8D8D8D;
+}
 
 /* Formatação Header */
 header{
@@ -53,7 +76,6 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,12 +89,20 @@ header p{
 }
 
 .botao{
-    color: #FFFFFF;
     text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px rgb(0, 0, 0, 0.8);
     padding: 10px 30px;
-    background-color: #ADD8E6;
+    background-color: rgb(234, 239, 242);
     font-size: .8em;
     border-radius: 5px;
+}
+
+.botao:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 
@@ -82,27 +112,41 @@ header p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #ADD8E6;
-    color: #FFFFFF;
+    border-bottom: 1px solid #e7e7e7;
+    background: rgb(234, 239, 242);
 }
 
 #sobre h2{
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 2em;
 }
 
 .foto img{
-    width: 60%;
+    width: 50%;
+    border-radius: 20px 0px 20px 0px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 8px 8px rgb(0, 0, 0, 0.8);    
 }
 
 .foto{
     float: left;
     width: 50%;
+    margin-bottom: 10px;
+
 }
 
 .texto{
     float: right;
     width: 50%;
+    margin-bottom: 10px;
+    background: #f4f4f4; 
+    border-radius: 0px 20px 0px 20px;
+    border: 1px solid #e7e7e7;
+    box-shadow: 8px 8px rgb(0, 0, 0, 0.8);
+}
+
+.texto p{
+    padding: 20px;
 }
 
 
@@ -146,6 +190,7 @@ header p{
     align-items: center;
     padding-top: 20px;
     margin: 0 20px;
+    margin-bottom: 20px;
 }
 
 #competencias h2{
@@ -191,48 +236,14 @@ header p{
 
 /* Formatação Meus Trabalhos */
 .trab img:hover{
-    -ms-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .trab img{
-    border: 10px groove #ADD8E6;
-}
-
-
-/* Formatação Hobby */
-#hobby{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    margin: 0 20px;
     width: 100%;
-}
-
-#hobby h2{
-    margin-bottom: 20px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 2em;
-}
-
-.hobby{
-    width: 80%;
-    text-align: center;
-    align-content: center;
-}
-
-.hobby p{
-    margin-top: 30px;
-    margin-bottom: 14px;
-}
-
-.hobby iframe{
-    height: 150px;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 
@@ -242,8 +253,10 @@ header p{
     flex-direction: column;
     align-content: center;
     text-align: center;
-    background-color: #ADD8E6;;
+    border-top: 1px solid #e7e7e7;
+    background: rgb(234, 239, 242);
     width: 100%;
+    padding-bottom: 20px;
 }
 
 #contato h2{
@@ -267,8 +280,22 @@ header p{
 /* Formatação Footer */
 footer{
     text-align: center;
+    background-color: #14425d;
+    color: #FFFFFF;
     width: 100%;
     padding: 20px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px){
+    nav{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 456px){
+    .dev{
+        height: 40px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -302,7 +329,7 @@ footer{
     #sobre{
         align-items: center;
         height: 90vh;
-        min-height: 80vh;
+        min-height: 60vh;
         justify-content: center;
     }
     #sobre h2{
@@ -312,6 +339,11 @@ footer{
         flex-grow: 1;
         flex-basis: 300px;
         padding: 0 10px;
+    }
+    #sobre div.texto{
+        flex-basis: 200px;
+        margin-right: 40px;
+        text-align: left;
     }
 
     /* Formatação Especialidades */
@@ -337,19 +369,9 @@ footer{
         width: 33.3333333333333333333333333333%;
     }
 
-    /* Formatação Hobby */
-    #hobby h2{
-        width: 100%;
-    }
-    #hobby p{
-        margin-right: 20px;
-    }
-    #hobby .hobby{
-        width: 50%;
-    }
-    .hobby iframe{
-        height: 300px;
-        margin-bottom: 20px;
+    /* Formatação Meus Trabalhos */
+    .trab{
+        margin-right: 0; 
     }
 
     /* Formatação Contato */
