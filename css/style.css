@@ -47,6 +47,10 @@ nav ul li a{
     border-radius: 4px;
 }
 
+nav a img{
+    margin-left: 6px;
+}
+
 nav ul li a:hover{
     background: rgb(112, 172, 180);
     transition: 1s ease;
@@ -212,6 +216,7 @@ header p{
     margin-top: 10px;
     font-size: 1em;
     text-align: center;
+
 }
 
 #competencias .comp p{
@@ -317,6 +322,9 @@ footer{
     }
     nav ul{
         width: 50%;
+    }
+    nav a img{
+        margin-left: 0;
     }
 
     /* Formatação Header */
