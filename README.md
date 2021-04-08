@@ -1,3 +1,3 @@
-# site-jaovictor
+# curriculo-joaovictor
 
-link GitHub Pages -> https://jaovictor-dev.github.io/site-jaovictor/
+link GitHub Pages -> https://jaovictor-dev.github.io/curriculo-joaovictor/
