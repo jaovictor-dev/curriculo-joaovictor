@@ -1,3 +1,3 @@
-# currículo-joaovictor
+# curriculo-joaovictor
 
 
