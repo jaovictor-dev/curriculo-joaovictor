@@ -125,22 +125,8 @@ header p{
     font-size: 2em;
 }
 
-.foto img{
-    width: 50%;
-    border-radius: 20px 0px 20px 0px;
-    border: 1px solid #e7e7e7;
-    box-shadow: 8px 8px rgb(0, 0, 0, 0.8);    
-}
-
-.foto{
-    float: left;
-    width: 50%;
-    margin-bottom: 10px;
-
-}
-
 .texto{
-    float: right;
+    align-self: center;
     width: 50%;
     margin-bottom: 10px;
     background: #f4f4f4; 
@@ -350,7 +336,10 @@ footer{
     }
     #sobre div.texto{
         flex-basis: 200px;
-        margin-right: 40px;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
         text-align: left;
     }
 
