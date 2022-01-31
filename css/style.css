@@ -172,6 +172,19 @@ header p{
     font-size: 2em;
 }
 
+#especialidades h3 {
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#especialidades h3 a {
+    text-decoration: none;
+}
+
+
 
 /* Formatação Especialidades */
 #competencias{
@@ -354,7 +367,7 @@ footer{
     }
     #especialidades div{
         flex-grow: 1;
-        flex-basis: 150px;
+        flex-basis: 200px;
         padding: 0 10px;
     }
 
